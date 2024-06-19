@@ -20,6 +20,8 @@ const Navbar = () => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
         setOpen(true);
+      } else {
+        setOpen(true);
       }
     };
 
