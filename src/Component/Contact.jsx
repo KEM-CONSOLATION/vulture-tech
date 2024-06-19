@@ -18,8 +18,8 @@ const Contact = () => {
             Let’s Work Together
           </p>
         </div>
-        <div className="  grid place-items-center lg:flex lg:items-start lg:justify-center  gap-[20px] mt-[40px]">
-          <div className=" relative  col-span-2">
+        <div className="   grid place-items-center lg:flex lg:items-start lg:justify-center  gap-[20px] mt-[40px]">
+          <div className=" relative  ">
             <img
               src={icon}
               alt=""
