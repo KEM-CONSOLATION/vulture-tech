@@ -3,27 +3,40 @@ import icon from "../assets/V.png";
 
 const About = () => {
   return (
-    <div className=" bg-[#F8F8F8] my-[51px] relative">
-      <img src={icon} alt="" className=" absolute bottom-0 left-0" />
+    <div className=" bg-[#F8F8F8] md:my-[51px] relative font-instrument">
+      <img
+        src={icon}
+        alt=""
+        className=" hidden md:block absolute  bottom-0 left-0"
+      />
 
       <div
         className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[120px]"
         data-aos="fade-up"
       >
-        <p className=" py-[8px] px-[12px] inline-block bg-[#D0F7EC] rounded-[20px] font-SatoshiMedium text-[14px] text-[#2B6151]">
-          About us
-        </p>
-        <div className=" grid place-items-center lg:flex lg:items-start lg:justify-between gap-[20px]">
-          <div className=" mt-[24px]">
-            <img src={AboutImage} alt="" />
+        <div className=" grid place-items-center lg:flex lg:items-center lg:justify-between gap-[20px]">
+          <div className=" ">
+            <p className=" py-[8px] px-[12px] inline-block bg-[#E2EAFF] rounded-[20px] text-[14px] text-[#213054]">
+              About Vulture
+            </p>
+            <p className=" text-[#333333] font-[500] text-[25px] mt-[18px]">
+              About Us
+            </p>
+            <img src={AboutImage} alt="" className=" mt-[36px]" />
           </div>
 
           <div className=" max-w-[500px] 2xl:max-w-[644px] grid gap-[24px]">
-            <div className="">
-              <p className=" text-[#061C60] font-Satoshi text-[25px] 2xl:text-[36px]">
-                With experienced teams and an agile framework, we prioritize our
-                clients&apos; commercial goals to deliver the highest business
-                value.
+            <div className=" grid gap-[30px] text-[#2C2C2C]  text-[20px] leading-[44px] font-[400]">
+              <p className=" ">
+                We believe in a collaborative approach. Our team of seasoned
+                developers, designers, and project managers work closely with
+                you to understand your goals and deliver solutions that exceed
+                your expectations.
+              </p>
+
+              <p className="">
+                From concept to deployment, we ensure a seamless development
+                process with transparent communication and agile methodologies.
               </p>
             </div>
           </div>
