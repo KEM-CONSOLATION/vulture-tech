@@ -63,7 +63,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-[#061C60] my-[120px]">
+    <div className="bg-[#061C60] ">
       <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[60px]">
         <div className="text-center" data-aos="fade-up">
           <p className=" font-[500] text-[14px] text-[#061C60] px-[12px] py-[8px] bg-[#FFFFFF] rounded-full inline">

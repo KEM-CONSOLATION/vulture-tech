@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`py-2 z-50 transition-all duration-300 ease-in-out ${
+      className={`py-2 z-[9999999] transition-all duration-300 ease-in-out ${
         !open ? "h-screen bg-black" : ""
       } ${isSticky ? "fixed top-0 left-0 right-0 shadow-md bg-black" : ""}`}
     >

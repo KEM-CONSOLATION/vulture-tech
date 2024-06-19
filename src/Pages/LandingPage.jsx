@@ -1,5 +1,6 @@
 import About from "../Component/About";
 import Clients from "../Component/Clients";
+import Contact from "../Component/Contact";
 import HeroSection from "../Component/HeroSection";
 import Portfolio from "../Component/Portfolio";
 import Services from "../Component/Services";
@@ -16,6 +17,7 @@ const LandingPage = () => {
       <Portfolio />
       <Clients />
       <Testimonials />
+      <Contact />
     </div>
   );
 };
