@@ -1,17 +1,38 @@
+import mobile from "../assets/9mobile.jpg";
+import Evolution from "../assets/21stEvolution.jpg";
+import blacktree from "../assets/blacktree.png";
+import BellaNaija from "../assets/BellaNaija.svg";
+import Branch from "../assets/Branch.svg";
+
 const Clients = () => {
   return (
-    <div className=" bg-[#B9F4E2] flex items-center justify-center gap-[20px] md:gap-[44px] text-center py-[18px]">
-      <div className=" text-[#061C60]">
-        <p className=" text-[24px] font-[600]">600+</p>
-        <p className=" text-[16px] font-[400]">Satisfied clients</p>
-      </div>
-      <div className=" text-[#061C60]">
-        <p className=" text-[24px] font-[600]">800+</p>
-        <p className=" text-[16px] font-[400]">Successful projects</p>
-      </div>{" "}
-      <div className=" text-[#061C60]">
-        <p className=" text-[24px] font-[600]">200+</p>
-        <p className=" text-[16px] font-[400]">Positive reviews </p>
+    <div className=" bg-[#E2EAFF]">
+      <div
+        className="  max-w-5xl  md:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 py-[40px]"
+        id="clients"
+      >
+        <p className=" text-[#333333] text-[14px] lg:text-[25px] font-[500]  mb-[22px]">
+          Our Clients
+        </p>
+        <p className=" font-[500] text-[16px] lg:text-[20px] text-[#2C2C2C]">
+          Trusted by startups and the world’s largest companies
+        </p>
+
+        <div className="  mt-[26px] grid grid-cols-2 gap-[60px]  lg:grid-cols-5 items-center justify-center place-items-center">
+          <img
+            src={BellaNaija}
+            alt=""
+            className=" max-w-[200px] max-h-[100px] object-fill"
+          />
+          <img src={Evolution} alt="" className=" " />
+          <img src={blacktree} alt="" className="" />
+          <img src={Branch} alt="" className="" />
+          <img
+            src={mobile}
+            alt=""
+            className="  max-w-[200px] max-h-[100px] object-fill"
+          />
+        </div>
       </div>
     </div>
   );
