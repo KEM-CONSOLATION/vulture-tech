@@ -7,25 +7,23 @@ const Contact = () => {
     <div className=" bg-[#F8F8F8]  font-instrument">
       {" "}
       <div
-        className="  relative  max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[40px] lg:py-[80px]"
+        className="  relative max-w-7xl md:mx-10 mx-[10px] 2xl:max-w-full 2xl:mx-40 py-[40px] lg:py-[80px]"
         data-aos="fade-up"
       >
-        <div className="  font-[500] text-center">
-          <p className=" text-[25px] font-[500] text-[#333333]">
+        <div className="  font-[500] lg:text-center">
+          <p className="  text-[18px] lg:text-[25px] font-[500] text-[#333333]">
             Got a Project? Tell us about it!
           </p>
-          <p className=" text-[20px] text-[#2C2C2C] py-[16px]">
+          <p className=" text-[16px] lg:text-[20px] text-[#2C2C2C] py-[16px]">
             Let’s Work Together
           </p>
         </div>
-        <div className="   grid place-items-center lg:flex lg:items-start lg:justify-center  gap-[20px] mt-[40px]">
-          <div className=" relative  ">
-            <img
-              src={icon}
-              alt=""
-              className=" hidden md:block absolute  -top-5 -left-20"
-            />
-            <div className="  relative z-50 grid gap-[24px] px-[32px] pt-[60px] pb-[27px] bg-white rounded-[24px] max-w-[700px] 2xl:w-[843px] shadow">
+        <div className="    lg:flex lg:items-start lg:justify-center  gap-[20px] mt-[40px]">
+          <div className=" relative">
+            <div className=" hidden lg:absolute  -top-5 -left-20">
+              <img src={icon} alt="" className="  " />
+            </div>
+            <div className="   grid gap-[24px] px-[32px] pt-[60px] pb-[27px] bg-white rounded-[24px] w-full md:max-w-[700px] 2xl:w-[843px] shadow">
               <div className="  grid md:grid-cols-2 gap-[24px]">
                 <div className=" grid gap-[8px]">
                   <label htmlFor="" className="   text-[14px] text-[#061C60]">

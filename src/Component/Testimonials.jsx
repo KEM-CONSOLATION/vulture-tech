@@ -84,7 +84,7 @@ const Testimonials = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-col md:flex-row items-center gap-[24px] justify-center my-[25px]">
+                <div className="flex flex-row items-start md:flex-row md:items-center gap-[24px] md:justify-center my-[25px]">
                   <div className="h-[50px] w-[50px] rounded-full">
                     <img
                       src={Testimonial1}
