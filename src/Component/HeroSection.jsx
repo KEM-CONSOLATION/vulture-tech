@@ -9,10 +9,7 @@ const HeroSection = () => {
       <div className=" ">
         <Navbar />
 
-        <div
-          className="  max-w-[377px]  md:max-w-[616px] mx-auto text-center"
-          data-aos="fade-up"
-        >
+        <div className="  max-w-[377px]  md:max-w-[616px] mx-auto text-center">
           <div className="max-w-[377px] mx-[10px] md:mx-0  md:max-w-[758px] ">
             <p className="text-[40px] md:text-[48px] font-bold text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-black md:leading-[60px] max-w-[453px] mx-auto">
               A Better Revolution For The Future.

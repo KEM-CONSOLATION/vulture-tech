@@ -6,7 +6,7 @@ import Branch from "../assets/Branch.svg";
 
 const Clients = () => {
   return (
-    <div className=" bg-[#E2EAFF]">
+    <div className=" bg-[#E2EAFF]" id="clients" data-aos="fade-up">
       <div
         className="  max-w-5xl  md:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 py-[40px]"
         id="clients"

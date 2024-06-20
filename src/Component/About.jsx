@@ -3,7 +3,11 @@ import icon from "../assets/V.png";
 
 const About = () => {
   return (
-    <div className=" bg-[#F8F8F8] md:my-[51px] relative font-instrument">
+    <div
+      className=" bg-[#F8F8F8] md:my-[51px] relative font-instrument"
+      id="about"
+      data-aos="fade-up"
+    >
       <img
         src={icon}
         alt=""

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { CloseLineIcon, Menu1LineIcon } from "../assets/icons";
-import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/Logo.svg";
 
 const Navbar = () => {
@@ -45,9 +44,9 @@ const Navbar = () => {
       <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40">
         <div className="flex flex-col md:flex md:flex-row justify-between md:items-center">
           <div className="w-[150px] md:w-[200px] mt-5 mb-[32px] md:mb-0 md:mt-0">
-            <Link to="/">
+            <a href="#">
               <img src={Logo} alt="Logo" />
-            </Link>
+            </a>
           </div>
           <div
             className={`md:flex md:items-center ${
@@ -55,54 +54,20 @@ const Navbar = () => {
             } font-[400] ${!open ? "block h-full" : "hidden md:block"}`}
           >
             <ul className="grid md:flex gap-5 my-5 md:gap-10 list-none text-[14px] mt-[32px] py-[16px] px-[20px] md:bg-[#616161] bg-opacity-40 rounded-full ">
-              <NavLink
-                to="/about"
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "text-[14px] text-[#ffffff] font-[400]"
-                    : isActive
-                    ? "text-[14px] text-[#66E6C1] font-[400]"
-                    : "text-[14px] text-[#ffffff] font-[400]"
-                }
-              >
-                <li>About Us</li>
-              </NavLink>
-              <NavLink
-                to="/services"
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "text-[14px] text-[#ffffff] font-[400]"
-                    : isActive
-                    ? "text-[14px] text-[#66E6C1] font-[400]"
-                    : "text-[14px] text-[#ffffff] font-[400]"
-                }
-              >
-                <li>Services</li>
-              </NavLink>
-              <NavLink
-                to="/clients"
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "text-[14px] text-[#ffffff] font-[400]"
-                    : isActive
-                    ? "text-[14px] text-[#66E6C1] font-[400]"
-                    : "text-[14px] text-[#ffffff] font-[400]"
-                }
-              >
-                <li>Clients</li>
-              </NavLink>
-              <NavLink
-                to="/portfolio"
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "text-[14px] text-[#ffffff] font-[400]"
-                    : isActive
-                    ? "text-[14px] text-[#66E6C1] font-[400]"
-                    : "text-[14px] text-[#ffffff] font-[400]"
-                }
-              >
-                <li>Portfolio</li>
-              </NavLink>
+              <li className="text-[14px] text-[#ffffff] font-[400]">
+                <a href="#about">About Us</a>
+              </li>
+              <li className=" text-[14px] text-[#ffffff] font-[400]">
+                <a href="#services">Services</a>
+              </li>
+
+              <li className=" text-[14px] text-[#ffffff] font-[400]">
+                <a href="#clients">Clients</a>
+              </li>
+
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
             </ul>
           </div>
           {open === true ? (

@@ -4,7 +4,10 @@ import SaaS from "../assets/SaaS.png";
 
 const Services = () => {
   return (
-    <div className=" bg-[#FFFFFF] md:my-[51px] relative font-instrument">
+    <div
+      className=" bg-[#FFFFFF] md:my-[51px] relative font-instrument"
+      id="services"
+    >
       <div
         className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[120px]"
         data-aos="fade-up"
