@@ -1,6 +1,6 @@
 import logo from "../assets/LogoMain.svg";
 import BG from "../assets/FooterImage.png";
-import Insta from "../assets/Insta.svg";
+import Insta from "../assets/insta.svg";
 import Twitter from "../assets/X.svg";
 import LinkedIn from "../assets/LinkedIn.svg";
 import PropTypes from "prop-types";
