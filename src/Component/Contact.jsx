@@ -1,10 +1,10 @@
 import ContactImage from "../assets/ContactImage.png";
-import Icon2 from "../assets/icon.png";
+import Icon2 from "../assets/Polygon.svg";
 import icon from "../assets/V2.svg";
 
 const Contact = () => {
   return (
-    <div className=" bg-[#F8F8F8]  font-instrument">
+    <div className=" bg-[#F8F8F8]  font-instrument" id="contact">
       {" "}
       <div
         className="  relative max-w-7xl md:mx-10 mx-[10px] 2xl:max-w-full 2xl:mx-40 py-[40px] lg:py-[80px]"
@@ -18,12 +18,12 @@ const Contact = () => {
             Let’s Work Together
           </p>
         </div>
-        <div className="    lg:flex lg:items-start lg:justify-center  gap-[20px] mt-[40px]">
+        <div className="    lg:flex lg:items-start lg:justify-between  gap-[20px] mt-[40px]">
           <div className=" relative">
             <div className=" hidden lg:absolute  -top-5 -left-20">
               <img src={icon} alt="" className="  " />
             </div>
-            <div className="   grid gap-[24px] px-[32px] pt-[60px] pb-[27px] bg-white rounded-[24px] w-full md:max-w-[700px] 2xl:w-[843px] shadow">
+            <div className="   grid gap-[24px] px-[32px] pt-[60px] pb-[27px] bg-white rounded-[24px] w-full md:max-w-[700px] 2xl:w-[875px] shadow">
               <div className="  grid md:grid-cols-2 gap-[24px]">
                 <div className=" grid gap-[8px]">
                   <label htmlFor="" className="   text-[14px] text-[#061C60]">
@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="  grid md:grid-cols-2 gap-[24px]">
+              <div className="  grid md:grid-cols-2 gap-[24px] mb-[24px]">
                 <div className=" grid gap-[8px]">
                   <input
                     type="text"
@@ -99,7 +99,7 @@ const Contact = () => {
               <img src={ContactImage} alt="" className=" w-full" />
             </div>
             <div className=" my-[16px]">
-              <p className="  text-[20px]  font-[400] text-[#2C2C2C] leading-[30px]">
+              <p className="  text-[16px]  font-[400] text-[#2C2C2C] leading-[30px]">
                 Our software development experts will analyze your requirements
                 and make recommendations on the best ways to bring your concept
                 to life.
@@ -107,13 +107,6 @@ const Contact = () => {
             </div>
             <div className="">
               <img src={Icon2} alt="" />
-            </div>
-            <div className=" my-[16px]">
-              <p className="  text-[20px]  font-[400] text-[#2C2C2C] leading-[44px]">
-                Vulture is redefining software development and delivery by
-                focusing on a data-oriented engineering framework that unearths
-                value for the enterprise
-              </p>
             </div>
           </div>
         </div>

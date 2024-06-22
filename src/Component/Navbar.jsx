@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { CloseLineIcon, Menu1LineIcon } from "../assets/icons";
-import Logo from "../assets/Logo.svg";
+import Logo from "../assets/LogoMain.svg";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -53,7 +53,7 @@ const Navbar = () => {
               !open ? "text-[#061C60]" : "text-white"
             } font-[400] ${!open ? "block h-full" : "hidden md:block"}`}
           >
-            <ul className="grid md:flex gap-5 my-5 md:gap-10 list-none text-[14px] mt-[32px] py-[16px] px-[20px] md:bg-[#616161] bg-opacity-40 rounded-full ">
+            <ul className="grid md:flex gap-5 my-5 md:gap-10 list-none text-[14px] mt-[32px] py-[16px] px-[20px] md:bg-[#616161] md:bg-opacity-10 rounded-full ">
               <li className="text-[14px] text-[#ffffff] font-[400]">
                 <a href="#about">About Us</a>
               </li>

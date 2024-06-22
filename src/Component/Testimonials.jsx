@@ -63,13 +63,13 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-[#061C60] ">
+    <div className="bg-[#FFFFFF] ">
       <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[60px]">
         <div className="text-center" data-aos="fade-up">
-          <p className=" font-[500] text-[14px] text-[#061C60] px-[12px] py-[8px] bg-[#FFFFFF] rounded-full inline">
+          <p className=" font-[500] text-[14px] text-[#213054] px-[12px] py-[8px] bg-[#E2EAFF] rounded-full inline">
             Testimonials
           </p>
-          <p className="text-[25px] md:text-[25px] font-[500] text-[#ffffff] my-[30px]">
+          <p className="text-[25px] md:text-[25px] font-[500] text-[#2C2C2C] my-[30px]">
             What our clients say
           </p>
           <Slider {...settings}>
@@ -79,7 +79,7 @@ const Testimonials = () => {
                 className="grid place-items-center items-center max-w-[900px] mx-auto justify-center"
               >
                 <div className="">
-                  <p className="text-[#ffffff] text-[20px] font-[400] ">
+                  <p className="text-[#2C2C2C] text-[14px] leading-[30px] md:text-[20px] font-[400]">
                     {testimonial.content}
                   </p>
                 </div>
@@ -93,10 +93,10 @@ const Testimonials = () => {
                     />
                   </div>
                   <div className=" text-start">
-                    <p className=" text-[16px] font-[500] text-[#ffffff]">
+                    <p className=" text-[16px] font-[500] text-[#2C2C2C]">
                       {testimonial.name}
                     </p>
-                    <p className="text-[12px] font-[400] text-[#ffffff]">
+                    <p className="text-[12px] font-[400] text-[#2C2C2C]">
                       {testimonial.company}
                     </p>
                   </div>
@@ -110,14 +110,14 @@ const Testimonials = () => {
         
 
         .slick-dots li button:before {
-          font-size: 20px;
+          font-size: 10px;
           color: #D9D9D9; 
           margin-top: 24px;
 
         }
         
         .slick-dots li.slick-active button:before {
-          color: #ffffff; 
+          color: #000; 
         }
       `}</style>
     </div>

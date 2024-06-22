@@ -1,8 +1,8 @@
-import logo from "../assets/Logo.svg";
+import logo from "../assets/LogoMain.svg";
 import BG from "../assets/FooterImage.png";
-import Insta from "../assets/insta.svg";
-import Twitter from "../assets/twitter.svg";
-import LinkedIn from "../assets/linkedin.svg";
+import Insta from "../assets/Insta.svg";
+import Twitter from "../assets/X.svg";
+import LinkedIn from "../assets/LinkedIn.svg";
 import PropTypes from "prop-types";
 
 const Footer = () => {
@@ -15,6 +15,11 @@ const Footer = () => {
         <div className=" grid md:grid-cols-2 items-center mb-[100px] md:mb-[50px]">
           <div className=" pb-[48px] md:pb-0">
             <img src={logo} alt="" className="" />
+            <p className="  text-[14px]  mt-[26px] font-[400] text-[#FFFFFF] leading-[30px] max-w-[399px]">
+              Vulture is redefining software development and delivery by
+              focusing on a data-oriented engineering framework that unearths
+              value for the enterprise
+            </p>
           </div>
           <div className="grid gap-[26px] max-w-[278px]">
             <div className=" grid gap-[24px]">

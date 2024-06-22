@@ -19,7 +19,10 @@ const HeroSection = () => {
               Innovate. Integrate. Elevate. Crafting seamless solutions for a
               connected tomorrow.
             </p>
-            <a className="  px-[44px] py-[8px] rounded-[20px] border border-white text-[#ffffff]  text-[18px] font-[400]">
+            <a
+              href="#contact"
+              className="  px-[44px] py-[8px] rounded-[20px] border border-white text-[#ffffff]  text-[18px] font-[400]"
+            >
               Get Started
             </a>
           </div>

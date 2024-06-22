@@ -6,7 +6,7 @@ import Branch from "../assets/Branch.svg";
 
 const Clients = () => {
   return (
-    <div className=" bg-[#E2EAFF]" id="clients" data-aos="fade-up">
+    <div className=" bg-[#FFFFFF]" id="clients" data-aos="fade-up">
       <div
         className="  max-w-5xl  md:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 py-[40px]"
         id="clients"
@@ -18,7 +18,7 @@ const Clients = () => {
           Trusted by startups and the world’s largest companies
         </p>
 
-        <div className="  mt-[26px] grid grid-cols-2 gap-[60px]  lg:grid-cols-5 items-center justify-center place-items-center">
+        <div className="  mt-[26px] grid grid-cols-2 gap-[60px]  lg:grid-cols-5 items-center justify-center place-items-start">
           <img
             src={BellaNaija}
             alt=""

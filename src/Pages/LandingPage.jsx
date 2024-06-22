@@ -51,7 +51,7 @@ const LandingPage = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-[#E2EAFF] text-[#000000] px-4 py-4 rounded-full shadow-lg hover:bg-[#47240E] hover:text-white transition-all duration-300 animate-bounce hover:animate-none"
+          className="fixed bottom-4 right-4 bg-[#ffffff] text-[#000000] px-4 py-4 rounded-full shadow-lg hover:bg-[#000000] hover:text-white transition-all duration-300 animate-bounce hover:animate-none"
         >
           <RiArrowUpDoubleLine className="text-2xl" />
         </button>

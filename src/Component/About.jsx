@@ -4,7 +4,7 @@ import icon from "../assets/V.png";
 const About = () => {
   return (
     <div
-      className=" bg-[#F8F8F8] md:my-[51px] relative font-instrument"
+      className=" bg-[#FFFFFF] relative font-instrument"
       id="about"
       data-aos="fade-up"
     >
@@ -29,8 +29,8 @@ const About = () => {
             <img src={AboutImage} alt="" className=" mt-[36px]" />
           </div>
 
-          <div className=" max-w-[500px] 2xl:max-w-[644px] grid gap-[24px]">
-            <div className=" grid gap-[30px] text-[#2C2C2C]  text-[20px] leading-[44px] font-[400]">
+          <div className=" max-w-[500px] 2xl:max-w-[699px] grid gap-[24px]">
+            <div className=" grid gap-[30px] text-[#2C2C2C]  text-[16px] md:text-[20px] leading-[30px] md:leading-[44px] font-[400] ">
               <p className=" ">
                 We believe in a collaborative approach. Our team of seasoned
                 developers, designers, and project managers work closely with
