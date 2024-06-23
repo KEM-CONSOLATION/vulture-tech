@@ -32,71 +32,61 @@ const Services = () => {
               </div>
             )}
           </div>
-          <div className="grid sm:grid-cols-2 md:flex items-end justify-center gap-[12px] relative">
-            <div
-              className="relative rounded-[10px] overflow-hidden group"
-              onMouseEnter={() => setHoveredCard(0)}
-              onMouseLeave={() => setHoveredCard(null)}
-            >
-              <div
-                className="absolute inset-0 flex items-end justify-center z-20"
-                style={{ paddingBottom: "60px" }}
-              >
-                <div className="max-w-[222px] text-center">
-                  <p className="font-[500] text-[20px] text-white">
-                    Artificial Intelligence & Machine Learning
-                  </p>
-                </div>
-              </div>
-              <img
-                src={Ai}
-                alt="AI"
-                className="object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
-              />
-              {/* {hoveredCard === 0 && ( */}
-              <div className="absolute text-[14px] inset-0 bg-black bg-opacity-60 flex items-start justify-center text-white p-4 lg:hidden">
-                {cardContents[0]}
-              </div>
-              {/* )} */}
-            </div>
-
-            <div
-              className="relative rounded-[10px] overflow-hidden group"
-              onMouseEnter={() => setHoveredCard(1)}
-              onMouseLeave={() => setHoveredCard(null)}
-            >
-              <div
-                className="absolute inset-0 flex items-end justify-center z-20"
-                style={{ paddingBottom: "60px" }}
-              >
-                <div className="max-w-[222px] text-center">
-                  <p className="font-[500] text-[20px] text-white">
-                    Analysis & Big Data
-                  </p>
-                </div>
-              </div>
-              <img
-                src={Analysis}
-                alt="Analysis"
-                className="object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
-              />
-              {/* {hoveredCard === 1 && ( */}
-              <div className="absolute text-[14px] inset-0 bg-black bg-opacity-60 flex items-start justify-center text-white p-4 lg:hidden">
-                {cardContents[1]}
-              </div>
-              {/* )} */}
-            </div>
-
+          <div className="grid sm:grid-cols-2 md:flex items-end justify-center gap-[12px] relative ml-auto sm:ml-0">
             <div className=" relative">
               <div
-                className="relative rounded-[10px] overflow-hidden group"
+                className="relative rounded-[10px] overflow-hidden group w-[245px] lg:w-auto h-[200px] lg:h-auto"
+                onMouseEnter={() => setHoveredCard(0)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                <div className="absolute inset-0 flex items-end justify-end lg:justify-center z-20 pb-[10px] pr-[10px] lg:pr-0 lg:pb-[60px]">
+                  <div className="max-w-[222px] text-center">
+                    <p className="font-[500] text-[20px] text-white">
+                      Artificial Intelligence & Machine Learning
+                    </p>
+                  </div>
+                </div>
+                <img
+                  src={Ai}
+                  alt="AI"
+                  className="object-cover h-full w-full transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                />
+              </div>
+              <div className="absolute w-[245px] text-[14px] top-[35%] left-[-30%] sm:hidden transform -translate-y-1/2 bg-[#F2F2F2]  flex items-start justify-center text-[#2C2C2C] rounded-[10px] p-4 lg:hidden">
+                {cardContents[0]}
+              </div>
+            </div>
+            <div className=" relative">
+              <div
+                className="relative rounded-[10px] overflow-hidden group w-[245px] lg:w-auto h-[200px] lg:h-auto"
+                onMouseEnter={() => setHoveredCard(1)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                <div className="absolute inset-0 flex items-end justify-end lg:justify-center z-20 pb-[10px] pr-[10px] lg:pr-0 lg:pb-[60px]">
+                  <div className="max-w-[222px] text-center">
+                    <p className="font-[500] text-[20px] text-white">
+                      Analysis & Big Data
+                    </p>
+                  </div>
+                </div>
+                <img
+                  src={Analysis}
+                  alt="Analysis"
+                  className="object-cover h-full w-full transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                />
+              </div>
+              <div className="absolute w-[245px] text-[14px] top-[35%] left-[-30%] sm:hidden transform -translate-y-1/2 bg-[#F2F2F2]  flex items-start justify-center text-[#2C2C2C] rounded-[10px] p-4 lg:hidden">
+                {cardContents[1]}
+              </div>
+            </div>
+
+            <div className="relative">
+              <div
+                className="relative rounded-[10px] overflow-hidden group w-[245px] lg:w-auto h-[201px] lg:h-auto"
                 onMouseEnter={() => setHoveredCard(2)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
-                <div
-                  className="absolute inset-0 flex items-end justify-center z-20"
-                  style={{ paddingBottom: "60px" }}
-                >
+                <div className="absolute inset-0 flex items-end justify-end lg:justify-center z-20 pb-[10px] pr-[10px] lg:pr-0 lg:pb-[60px]">
                   <div className="max-w-[222px] text-center">
                     <p className="font-[500] text-[20px] text-white">
                       SaaS Application Development
@@ -106,13 +96,14 @@ const Services = () => {
                 <img
                   src={SaaS}
                   alt="SaaS"
-                  className="object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                  className="object-cover h-full w-full transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
                 />
-                {/* {hoveredCard === 2 && ( */}
-                <div className="absolute text-[14px] inset-0 bg-black bg-opacity-60 flex items-start justify-center text-white p-4 lg:hidden">
-                  {cardContents[2]}
-                </div>
-                {/* )} */}
+              </div>
+              <div
+                className="absolute w-[245px] text-[14px] top-[35%] left-[-30%] sm:hidden transform -translate-y-1/2 bg-[#F2F2F2]  flex items-start justify-center text-[#2C2C2C] rounded-[10px] p-4 lg:hidden"
+                id="content"
+              >
+                {cardContents[2]}
               </div>
             </div>
           </div>
