@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40">
         <div className="flex flex-col md:flex md:flex-row justify-between md:items-center">
           <div className="w-[150px] md:w-[200px] mt-5 mb-[32px] md:mb-0 md:mt-0">
-            <a href="#">
+            <a href="#" onClick={() => setOpen(true)}>
               <img src={Logo} alt="Logo" />
             </a>
           </div>
