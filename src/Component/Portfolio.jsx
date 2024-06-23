@@ -105,14 +105,12 @@ const Portfolio = () => {
               className="w-[48px] h-[48px] cursor-pointer"
               onClick={prevSlide}
             /> */}
-            {/* <p>Left</p> */}
             {/* <img
               src={ArrowRight}
               alt="Next"
               className="w-[48px] h-[48px] cursor-pointer"
               onClick={nextSlide}
             /> */}
-            {/* <p>Right</p> */}
           </div>
         </div>
       </div>
