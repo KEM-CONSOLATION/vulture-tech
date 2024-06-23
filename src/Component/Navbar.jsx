@@ -54,18 +54,30 @@ const Navbar = () => {
             } font-[400] ${!open ? "block h-full" : "hidden md:block"}`}
           >
             <ul className="grid md:flex gap-5 my-5 md:gap-10 list-none text-[14px] mt-[32px] py-[16px] px-[20px] md:bg-[#616161] md:bg-opacity-10 rounded-full ">
-              <li className="text-[14px] text-[#ffffff] font-[400]">
+              <li
+                className="text-[14px] text-[#ffffff] font-[400]"
+                onClick={() => setOpen(true)}
+              >
                 <a href="#about">About Us</a>
               </li>
-              <li className=" text-[14px] text-[#ffffff] font-[400]">
+              <li
+                className=" text-[14px] text-[#ffffff] font-[400]"
+                onClick={() => setOpen(true)}
+              >
                 <a href="#services">Services</a>
               </li>
 
-              <li className=" text-[14px] text-[#ffffff] font-[400]">
+              <li
+                className=" text-[14px] text-[#ffffff] font-[400]"
+                onClick={() => setOpen(true)}
+              >
                 <a href="#clients">Clients</a>
               </li>
 
-              <li>
+              <li
+                className=" text-[14px] text-[#ffffff] font-[400]"
+                onClick={() => setOpen(true)}
+              >
                 <a href="#portfolio">Portfolio</a>
               </li>
             </ul>
