@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Ai from "../assets/Ai.png";
-import Analysis from "../assets/Analysis.png";
-import SaaS from "../assets/Saas.png";
+import Ai from "../assets/AiMain.png";
+import Analysis from "../assets/analysis1.png";
+import SaaS from "../assets/Saas1.png";
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);

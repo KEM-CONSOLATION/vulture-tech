@@ -1,5 +1,5 @@
 import ContactImage from "../assets/ContactImage.png";
-import Icon2 from "../assets/Polygon.svg";
+import Icon2 from "../assets/polygonMain.svg";
 import icon from "../assets/V2.svg";
 
 const Contact = () => {
