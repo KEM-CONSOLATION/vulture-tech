@@ -1,8 +1,8 @@
 import logo from "../assets/LogoMain.svg";
 import BG from "../assets/FooterImage.png";
-import Insta from "../assets/insta.svg";
+import Insta from "../assets/Insta.svg";
 import Twitter from "../assets/x.svg";
-import LinkedIn from "../assets/linkedIn.svg";
+import LinkedIn from "../assets/LinkedIn.svg";
 import PropTypes from "prop-types";
 
 const Footer = () => {
