@@ -13,19 +13,19 @@ const Services = () => {
   ];
 
   return (
-    <div className="bg-[#FFFFFF]  relative font-instrument" id="services">
+    <div className="bg-[#FFFFFF] relative font-instrument" id="services">
       <div
         className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 lg:py-[120px]"
         data-aos="fade-up"
       >
         <div className="grid lg:flex items-start lg:justify-between gap-[20px] relative">
-          <div className="">
+          <div>
             <p className="py-[8px] px-[12px] inline-block bg-[#E2EAFF] rounded-[20px] text-[14px] text-[#213054]">
               Our Services
             </p>
             <p className="text-[#333333] text-[25px] mt-[18px]">What we do</p>
             {hoveredCard !== null && (
-              <div className="font-[500]  max-w-[334px] hidden lg:block absolute left-0 bottom-0 transition-opacity duration-300 opacity-100">
+              <div className="font-[500] max-w-[334px] hidden lg:block absolute left-0 bottom-0 transition-opacity duration-300 opacity-100">
                 <p className="text-[20px] font-[400] text-[#2C2C2C] leading-[44px]">
                   {cardContents[hoveredCard]}
                 </p>
@@ -53,6 +53,11 @@ const Services = () => {
                 alt="AI"
                 className="object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
               />
+              {/* {hoveredCard === 0 && ( */}
+              <div className="absolute text-[14px] inset-0 bg-black bg-opacity-60 flex items-start justify-center text-white p-4 lg:hidden">
+                {cardContents[0]}
+              </div>
+              {/* )} */}
             </div>
 
             <div
@@ -64,7 +69,7 @@ const Services = () => {
                 className="absolute inset-0 flex items-end justify-center z-20"
                 style={{ paddingBottom: "60px" }}
               >
-                <div className="max-w-[170px] text-center">
+                <div className="max-w-[222px] text-center">
                   <p className="font-[500] text-[20px] text-white">
                     Analysis & Big Data
                   </p>
@@ -75,28 +80,40 @@ const Services = () => {
                 alt="Analysis"
                 className="object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
               />
+              {/* {hoveredCard === 1 && ( */}
+              <div className="absolute text-[14px] inset-0 bg-black bg-opacity-60 flex items-start justify-center text-white p-4 lg:hidden">
+                {cardContents[1]}
+              </div>
+              {/* )} */}
             </div>
 
-            <div
-              className="relative rounded-[10px] overflow-hidden group"
-              onMouseEnter={() => setHoveredCard(2)}
-              onMouseLeave={() => setHoveredCard(null)}
-            >
+            <div className=" relative">
               <div
-                className="absolute inset-0 flex items-end justify-center z-20"
-                style={{ paddingBottom: "60px" }}
+                className="relative rounded-[10px] overflow-hidden group"
+                onMouseEnter={() => setHoveredCard(2)}
+                onMouseLeave={() => setHoveredCard(null)}
               >
-                <div className="max-w-[222px] text-center">
-                  <p className="font-[500] text-[20px] text-white">
-                    SaaS Application Development
-                  </p>
+                <div
+                  className="absolute inset-0 flex items-end justify-center z-20"
+                  style={{ paddingBottom: "60px" }}
+                >
+                  <div className="max-w-[222px] text-center">
+                    <p className="font-[500] text-[20px] text-white">
+                      SaaS Application Development
+                    </p>
+                  </div>
                 </div>
+                <img
+                  src={SaaS}
+                  alt="SaaS"
+                  className="object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                />
+                {/* {hoveredCard === 2 && ( */}
+                <div className="absolute text-[14px] inset-0 bg-black bg-opacity-60 flex items-start justify-center text-white p-4 lg:hidden">
+                  {cardContents[2]}
+                </div>
+                {/* )} */}
               </div>
-              <img
-                src={SaaS}
-                alt="SaaS"
-                className="object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
-              />
             </div>
           </div>
         </div>
