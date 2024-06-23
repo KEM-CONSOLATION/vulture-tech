@@ -2,7 +2,7 @@ import logo from "../assets/LogoMain.svg";
 import BG from "../assets/FooterImage.png";
 import Insta from "../assets/instagram.svg";
 import Twitter from "../assets/twitterX.svg";
-import LinkedIn from "../assets/LinkedIn.svg";
+import LinkedIn from "../assets/Linkedin.svg";
 import PropTypes from "prop-types";
 
 const Footer = () => {
