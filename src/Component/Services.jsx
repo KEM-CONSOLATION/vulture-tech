@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Ai from "../assets/AI.png";
+import Ai from "../assets/Ai.png";
 import Analysis from "../assets/Analysis.png";
 import SaaS from "../assets/Saas.png";
 
