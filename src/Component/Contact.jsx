@@ -7,7 +7,7 @@ const Contact = () => {
     <div className=" bg-[#F8F8F8]  font-instrument" id="contact">
       {" "}
       <div
-        className="  relative max-w-7xl md:mx-10 mx-[10px] 2xl:max-w-full 2xl:mx-40 py-[40px] lg:py-[80px]"
+        className="  relative max-w-5xl md:mx-auto mx-[10px] 2xl:max-w-full 2xl:mx-40 py-[40px] lg:py-[80px]"
         data-aos="fade-up"
       >
         <div className="  font-[500] lg:text-center">
@@ -18,7 +18,7 @@ const Contact = () => {
             Let’s Work Together
           </p>
         </div>
-        <div className="    lg:flex lg:items-start lg:justify-center  gap-[20px] mt-[40px]">
+        <div className="    lg:flex lg:items-start lg:justify-center  gap-[34px] mt-[40px]">
           <div className=" relative">
             <div className=" hidden lg:absolute  -top-5 -left-20">
               <img src={icon} alt="" className="  " />

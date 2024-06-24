@@ -7,10 +7,7 @@ import Branch from "../assets/Branch.svg";
 const Clients = () => {
   return (
     <div className=" bg-[#FFFFFF]" id="clients" data-aos="fade-up">
-      <div
-        className="  max-w-5xl  md:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 py-[40px]"
-        id="clients"
-      >
+      <div className="  max-w-5xl  md:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 py-[40px]">
         <p className=" text-[#333333] text-[14px] lg:text-[25px] font-[500]  mb-[22px]">
           Our Clients
         </p>

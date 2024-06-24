@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <div className="bg-[#FFFFFF] relative font-instrument" id="services">
       <div
-        className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 lg:py-[120px]"
+        className="max-w-5xl md:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 lg:py-[120px]"
         data-aos="fade-up"
       >
         <div className="grid lg:flex items-start lg:justify-between gap-[20px] relative">
@@ -25,8 +25,8 @@ const Services = () => {
             </p>
             <p className="text-[#333333] text-[25px] mt-[18px]">What we do</p>
             {hoveredCard !== null && (
-              <div className="font-[500] max-w-[334px] hidden lg:block absolute left-0 bottom-0 transition-opacity duration-300 opacity-100">
-                <p className="text-[20px] font-[400] text-[#2C2C2C] leading-[44px]">
+              <div className="font-[500] max-w-[280px] 2xl:max-w-[334px] hidden lg:block absolute left-0 bottom-0 transition-opacity duration-300 opacity-100">
+                <p className=" text-[16px] 2xl:text-[20px] font-[400] text-[#2C2C2C] leading-[44px]">
                   {cardContents[hoveredCard]}
                 </p>
               </div>
@@ -35,7 +35,7 @@ const Services = () => {
           <div className="grid sm:grid-cols-2 md:flex items-end justify-center gap-[12px] relative ml-auto sm:ml-0">
             <div className=" relative">
               <div
-                className="relative rounded-[10px] overflow-hidden group w-[245px] lg:w-auto h-[200px] lg:h-auto"
+                className="relative rounded-[10px] overflow-hidden group w-[245px] lg:w-auto h-[200px] lg:h-[300px] 2xl:h-auto"
                 onMouseEnter={() => setHoveredCard(0)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
@@ -58,7 +58,7 @@ const Services = () => {
             </div>
             <div className=" relative">
               <div
-                className="relative rounded-[10px] overflow-hidden group w-[245px] lg:w-auto h-[200px] lg:h-auto"
+                className="relative rounded-[10px] overflow-hidden group w-[245px] lg:w-auto h-[200px] lg:h-[300px] 2xl:h-auto"
                 onMouseEnter={() => setHoveredCard(1)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
@@ -82,7 +82,7 @@ const Services = () => {
 
             <div className="relative">
               <div
-                className="relative rounded-[10px] overflow-hidden group w-[245px] lg:w-auto h-[201px] lg:h-auto"
+                className="relative rounded-[10px] overflow-hidden group w-[245px] lg:w-auto h-[201px] lg:h-[300px] 2xl:h-auto"
                 onMouseEnter={() => setHoveredCard(2)}
                 onMouseLeave={() => setHoveredCard(null)}
               >

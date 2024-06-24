@@ -15,7 +15,7 @@ const About = () => {
       />
 
       <div
-        className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[120px]"
+        className="max-w-5xl md:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 py-[120px]"
         data-aos="fade-up"
       >
         <div className=" grid place-items-center lg:flex lg:items-center lg:justify-between gap-[20px]">
@@ -29,7 +29,7 @@ const About = () => {
             <img src={AboutImage} alt="" className=" mt-[36px]" />
           </div>
 
-          <div className=" max-w-[500px] lg:max-w-[699px] grid gap-[24px]">
+          <div className=" max-w-[500px] lg:max-w-[600px] 2xl:max-w-[699px] grid gap-[24px]">
             <div className=" grid gap-[30px] text-[#2C2C2C]  text-[16px] md:text-[20px] leading-[30px] md:leading-[44px] font-[400] ">
               <p className=" ">
                 We believe in a collaborative approach. Our team of seasoned
