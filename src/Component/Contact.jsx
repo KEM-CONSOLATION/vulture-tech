@@ -18,12 +18,12 @@ const Contact = () => {
             Let’s Work Together
           </p>
         </div>
-        <div className="    lg:flex lg:items-start lg:justify-between  gap-[20px] mt-[40px]">
+        <div className="    lg:flex lg:items-start lg:justify-center  gap-[20px] mt-[40px]">
           <div className=" relative">
             <div className=" hidden lg:absolute  -top-5 -left-20">
               <img src={icon} alt="" className="  " />
             </div>
-            <div className="   grid gap-[24px] px-[32px] pt-[60px] pb-[27px] bg-white rounded-[24px] w-full md:max-w-[700px] 2xl:w-[875px] shadow">
+            <div className="   grid gap-[24px] px-[32px] pt-[60px] pb-[27px] bg-white rounded-[24px] w-full md:max-w-[700px] lg:w-[875px] shadow">
               <div className="  grid md:grid-cols-2 gap-[24px]">
                 <div className=" grid gap-[8px]">
                   <label htmlFor="" className="   text-[14px] text-[#061C60]">
