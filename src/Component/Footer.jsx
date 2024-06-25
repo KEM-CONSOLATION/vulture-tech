@@ -11,7 +11,7 @@ const Footer = () => {
       className=" bg-cover bg-center  font-instrument"
       style={{ backgroundImage: `url(${BG})` }}
     >
-      <div className="max-w-5xl md:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 py-[80px] 2xl:py-[130px]">
+      <div className="max-w-5xl lg:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 py-[80px] 2xl:py-[130px]">
         <div className=" grid md:grid-cols-2 items-center mb-[100px] md:mb-[50px]">
           <div className=" pb-[48px] md:pb-0">
             <img src={logo} alt="" className="" />

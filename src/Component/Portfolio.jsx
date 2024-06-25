@@ -58,7 +58,7 @@ const Portfolio = () => {
 
   return (
     <div className="bg-[#FFFFFF]" id="portfolio" data-aos="fade-up">
-      <div className="max-w-5xl md:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 py-[69px]">
+      <div className="max-w-5xl lg:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 py-[69px]">
         <div className=" max-w-[617px]">
           <p className="py-[8px] px-[12px] inline-block bg-[#E2EAFF] rounded-[20px]  text-[14px] text-[#213054]">
             Portfolio

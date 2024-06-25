@@ -15,7 +15,7 @@ const About = () => {
       />
 
       <div
-        className="max-w-5xl md:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 py-[120px]"
+        className="max-w-5xl lg:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 py-[120px]"
         data-aos="fade-up"
       >
         <div className=" grid place-items-center lg:flex lg:items-center lg:justify-between gap-[20px]">

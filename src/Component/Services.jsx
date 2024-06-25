@@ -1,109 +1,78 @@
-import { useState } from "react";
-import Ai from "../assets/AiMain.png";
-import Analysis from "../assets/analysis1.png";
-import SaaS from "../assets/Saas1.png";
+import Ai from "../assets/AI.svg";
+import Analysis from "../assets/ANALYSIS.svg";
+import SaaS from "../assets/SAAS.svg";
+import MVP from "../assets/MVP.svg";
 
 const Services = () => {
-  const [hoveredCard, setHoveredCard] = useState(null);
-
-  const cardContents = [
-    "Products built to extract maximum value, driven by machine power and unmatched intelligence.",
-    "Analysis & Big Data: Comprehensive analysis services powered by cutting-edge big data technologies.",
-    "SaaS Application Development: Developing scalable and robust SaaS applications tailored to your needs.",
-  ];
-
   return (
     <div className="bg-[#FFFFFF] relative font-instrument" id="services">
       <div
-        className="max-w-5xl md:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 lg:py-[120px]"
+        className="max-w-5xl lg:mx-auto mx-5 2xl:max-w-full 2xl:mx-40 lg:py-[120px]"
         data-aos="fade-up"
       >
-        <div className="grid lg:flex items-start lg:justify-between gap-[20px] relative">
-          <div>
+        <div className="">
+          <div className=" max-w-[699px] mb-[30px]">
             <p className="py-[8px] px-[12px] inline-block bg-[#E2EAFF] rounded-[20px] text-[14px] text-[#213054]">
               Our Services
             </p>
             <p className="text-[#333333] text-[25px] mt-[18px]">What we do</p>
-            {hoveredCard !== null && (
-              <div className="font-[500] max-w-[280px] 2xl:max-w-[334px] hidden lg:block absolute left-0 bottom-0 transition-opacity duration-300 opacity-100">
-                <p className=" text-[16px] 2xl:text-[20px] font-[400] text-[#2C2C2C] leading-[44px]">
-                  {cardContents[hoveredCard]}
-                </p>
-              </div>
-            )}
+            <p className="hidden md:block text-[#333333] text-[16px] lg:text-[20px] mt-[18px]">
+              Empowering businesses with innovative solutions for maximum
+              success. Streamlining operations and driving growth with
+              technology
+            </p>
           </div>
-          <div className="grid sm:grid-cols-2 md:flex items-end justify-center gap-[12px] relative ml-auto sm:ml-0">
-            <div className=" relative">
-              <div
-                className="relative rounded-[10px] overflow-hidden group w-[245px] lg:w-auto h-[200px] lg:h-[300px] 2xl:h-auto"
-                onMouseEnter={() => setHoveredCard(0)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <div className="absolute inset-0 flex items-end justify-end lg:justify-center z-20 pb-[10px] pr-[10px] lg:pr-0 lg:pb-[60px]">
-                  <div className="max-w-[222px] text-center">
-                    <p className="font-[500] text-[20px] text-white">
-                      Artificial Intelligence & Machine Learning
-                    </p>
-                  </div>
-                </div>
-                <img
-                  src={Ai}
-                  alt="AI"
-                  className="object-cover h-full w-full transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
-                />
-              </div>
-              <div className="absolute w-[245px] text-[14px] top-[35%] left-[-30%] sm:hidden transform -translate-y-1/2 bg-[#F2F2F2]  flex items-start justify-center text-[#2C2C2C] rounded-[10px] p-4 lg:hidden">
-                {cardContents[0]}
-              </div>
-            </div>
-            <div className=" relative">
-              <div
-                className="relative rounded-[10px] overflow-hidden group w-[245px] lg:w-auto h-[200px] lg:h-[300px] 2xl:h-auto"
-                onMouseEnter={() => setHoveredCard(1)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <div className="absolute inset-0 flex items-end justify-end lg:justify-center z-20 pb-[10px] pr-[10px] lg:pr-0 lg:pb-[60px]">
-                  <div className="max-w-[222px] text-center">
-                    <p className="font-[500] text-[20px] text-white">
-                      Analysis & Big Data
-                    </p>
-                  </div>
-                </div>
-                <img
-                  src={Analysis}
-                  alt="Analysis"
-                  className="object-cover h-full w-full transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
-                />
-              </div>
-              <div className="absolute w-[245px] text-[14px] top-[35%] left-[-30%] sm:hidden transform -translate-y-1/2 bg-[#F2F2F2]  flex items-start justify-center text-[#2C2C2C] rounded-[10px] p-4 lg:hidden">
-                {cardContents[1]}
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 place-items-center items-center ">
+            <div className="w-full bg-[#FAFAFA] rounded-[10px] md:rounded-[21px] border border-[#616161] border-opacity-20 px-[20px] py-[47px]">
+              <div className="max-w-full lg:max-w-[444px] grid gap-4">
+                <img src={Ai} alt="AI" className="h-[54px] w-[54px]" />
+                <p className="font-instrument text-[#333333] text-[16px] md:text-[20px] font-[600]">
+                  Artificial Intelligence & Machine Learning
+                </p>
+                <p className="font-[400] text-[14px] md:text-[16px] text-[#2C2C2C]">
+                  Products built to extract maximum value, driven by machine
+                  power and unmatched intelligence.
+                </p>
               </div>
             </div>
 
-            <div className="relative">
-              <div
-                className="relative rounded-[10px] overflow-hidden group w-[245px] lg:w-auto h-[201px] lg:h-[300px] 2xl:h-auto"
-                onMouseEnter={() => setHoveredCard(2)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <div className="absolute inset-0 flex items-end justify-end lg:justify-center z-20 pb-[10px] pr-[10px] lg:pr-0 lg:pb-[60px]">
-                  <div className="max-w-[222px] text-center">
-                    <p className="font-[500] text-[20px] text-white">
-                      SaaS Application Development
-                    </p>
-                  </div>
-                </div>
-                <img
-                  src={SaaS}
-                  alt="SaaS"
-                  className="object-cover h-full w-full transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
-                />
+            <div className="w-full bg-[#333333] rounded-[10px] md:rounded-[21px]  px-[20px] py-[47px]">
+              <div className="max-w-full lg:max-w-[444px] grid gap-4">
+                <img src={SaaS} alt="AI" className="h-[54px] w-[54px]" />
+                <p className="font-instrument text-[#FFFFFF] text-[16px] md:text-[20px] font-[600]">
+                  Artificial Intelligence & Machine Learning
+                </p>
+                <p className="font-[400] text-[14px] md:text-[16px] text-[#FFFFFF]">
+                  Products built to extract maximum value, driven by machine
+                  power and unmatched intelligence.
+                </p>
               </div>
-              <div
-                className="absolute w-[245px] text-[14px] top-[35%] left-[-30%] sm:hidden transform -translate-y-1/2 bg-[#F2F2F2]  flex items-start justify-center text-[#2C2C2C] rounded-[10px] p-4 lg:hidden"
-                id="content"
-              >
-                {cardContents[2]}
+            </div>
+
+            <div className="order-4 md:order-3 w-full bg-[#333333] rounded-[10px] md:rounded-[21px]  px-[20px] py-[47px]">
+              <div className="max-w-full lg:max-w-[444px] grid gap-4">
+                <img src={Analysis} alt="AI" className="h-[54px] w-[54px]" />
+                <p className="font-instrument text-[#FFFFFF] text-[16px] md:text-[20px] font-[600]">
+                  Analysis & Big Data
+                </p>
+                <p className="font-[400] text-[14px] md:text-[16px] text-[#FFFFFF]">
+                  Products built to extract maximum value, driven by machine
+                  power and unmatched intelligence.
+                </p>
+              </div>
+            </div>
+
+            <div className=" order-3 md:order-4 w-full bg-[#FAFAFA] rounded-[10px] md:rounded-[21px] border border-[#616161] border-opacity-20 px-[20px] py-[47px]">
+              <div className="max-w-full lg:max-w-[444px] grid gap-4">
+                <img src={MVP} alt="AI" className="h-[54px] w-[54px]" />
+                <p className="font-instrument text-[#333333] text-[16px] md:text-[20px] font-[600]">
+                  MVP Development
+                </p>
+                <p className="font-[400] text-[14px] md:text-[16px] text-[#2C2C2C]">
+                  Products built to extract maximum value, driven by machine
+                  power and unmatched intelligence.
+                </p>
               </div>
             </div>
           </div>

@@ -41,7 +41,7 @@ const Navbar = () => {
         !open ? "h-screen bg-black" : ""
       } ${isSticky ? "fixed top-0 left-0 right-0 shadow-md bg-black  " : ""}`}
     >
-      <div className="max-w-5xl md:mx-auto mx-5 2xl:max-w-full 2xl:mx-40">
+      <div className="max-w-5xl lg:mx-auto mx-5 2xl:max-w-full 2xl:mx-40">
         <div className="flex flex-col md:flex md:flex-row justify-between md:items-center">
           <div className="w-[150px] md:w-[200px] mt-5 mb-[32px] md:mb-0 md:mt-0">
             <a href="#" onClick={() => setOpen(true)}>

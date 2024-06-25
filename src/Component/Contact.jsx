@@ -7,7 +7,7 @@ const Contact = () => {
     <div className=" bg-[#F8F8F8]  font-instrument" id="contact">
       {" "}
       <div
-        className="  relative max-w-5xl md:mx-auto mx-[10px] 2xl:max-w-full 2xl:mx-40 py-[40px] lg:py-[80px]"
+        className="  relative max-w-5xl lg:mx-auto mx-[10px] 2xl:max-w-full 2xl:mx-40 py-[40px] lg:py-[80px]"
         data-aos="fade-up"
       >
         <div className="  font-[500] lg:text-center">
